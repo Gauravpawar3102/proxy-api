@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -18,11 +19,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.App {
+.button-group {
   display: flex;
   gap: 1rem;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  gap: 2rem;
+}
 button {
   padding: 1rem 2rem;
   font-size: 2rem;
