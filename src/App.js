@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react';
 
 function App() {
+  // useEffect(() => {
+  const fetchData = () => {
+    fetch('/todos/1')
+      .then((response) => response.json())
+      .then((json) => console.log(json));
+  };
+
+  // }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={fetchData}>Api 1</button>
+      <button onClick={fetchData}>Api 2</button>
     </div>
   );
 }
