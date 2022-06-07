@@ -4,5 +4,6 @@ const proxy = {
   changeOrigin: true,
 };
 module.exports = function (app) {
-  app.use(['/todos/1', '/todos/2'], createProxyMiddleware(proxy));
+  app.use('/todos/1', createProxyMiddleware(proxy));
+  //   app.use('/todos/2', createProxyMiddleware(proxy));
 };

@@ -22,6 +22,12 @@ function App() {
         console.log('Output 1:', res);
         setState(res);
       });
+    //  fetch('/todos/2')
+    //    .then((res) => res.json())
+    //    .then((res) => {
+    //      console.log('Output 1:', res);
+    //     //  setState(res);
+    //    });
   }
 
   return (
